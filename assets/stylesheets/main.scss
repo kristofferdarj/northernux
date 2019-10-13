@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "_modules/reset",
+        "_modules/mixins",
+        "_modules/typography",
+        "_modules/colours";
+* {
+  box-sizing: border-box;
+}
+::selection {
+  background-color: $color-accent;
+  color: $color-white;
+}
+.body {
+  background-color: $color-pageBg;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+	@extend .font-text;
+}
+.link {
+  border-bottom: 2px solid;
+  text-decoration: none;
+}
+.link--secondary {
+  color: $color-white;
+}
+
+//CTAS
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4em 0;
+
+  @media(min-width: 600px) {
+    flex-direction: row;
+  }
+}
+.cta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 2em;
+  flex-basis: 200px;
+  text-align: center;
+
+  @media(min-width: 600px) {
+    flex-basis: 400px;
+  }
+}
+.cta_button {
+  background-color: $color-accent;
+  border-radius: 30px;
+  color: $color-textSecondary;
+  cursor: pointer;
+  margin: 1em 0;
+  padding: 1em;
+  text-decoration: none;
+  transition: 600ms;
+
+  &:hover {
+    background-color: darken($color-accent, 8%);
+  }
+}
+
+.flex_filler {
+  display: flex;
+  flex-grow: 1;
+}
+.footer {
+	color: $color-text;
+	padding: 4em 2em 2em 2em;
+	text-align: center;
+}
