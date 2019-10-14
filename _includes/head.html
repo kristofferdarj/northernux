@@ -11,4 +11,11 @@
   <link rel="shortcut icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/stylesheet/main.css' | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | relative_url }}">
-  </head>
+
+  <!-- OG data -->
+  <meta property="og:image" content="{{ '/assets/images/social_sharing.png' | relative_url }}" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{site.title}}" />
+  <meta name="twitter:image" content="{{ '/assets/images/social_sharing.png' | relative_url }}" />
+</head>
