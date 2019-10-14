@@ -17,7 +17,7 @@ layout: default
     <div class="cta_divider"></div>
     <div class="cta">
       Få din dagliga dos av katt-giffar genom att gå med i vår&nbsp;slack.
-      <a class="cta_button cta_button--secondary" href="">Registera dig på slack</a>
+      <a class="cta_button cta_button--secondary" href="https://join.slack.com/t/northern-ux/shared_invite/enQtNzgyNzMwMTYyMjQzLTkyOTk0NDM5YmJhYzBjYzZkZGQ2ZDY3YjZkOTliZThhOThiMGI0NWM1NDY0ZjA1YjExMmIzNGFkZjY5N2Y5YmQ">Registera dig på slack</a>
     </div>
   </div>
 </section>
