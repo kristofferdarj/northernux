@@ -14,7 +14,9 @@ url: "https://northernux.se" # the base hostname & protocol for your site, e.g. 
 markdown: kramdown
 
 sass:
-    sass_dir: assets/stylesheet
+    sass_dir: assets/stylesheet/_modules
+    style: compressed
+
 assets:
   sources:
     - assets

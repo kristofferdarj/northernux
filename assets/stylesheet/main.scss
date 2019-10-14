@@ -1,0 +1,164 @@
+---
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "reset",
+        "typography",
+        "colours";
+* {
+  box-sizing: border-box;
+}
+::selection {
+  background-color: $color-accent;
+  color: $color-white;
+
+}
+@keyframes ctaBackground {
+    0%{background-position:0% 88%}
+    50%{background-position:100% 13%}
+    100%{background-position:0% 88%}
+}
+.body {
+  background: linear-gradient(236deg, #30a353, #c357ad);
+  background-size: 400% 400%;
+
+  animation: ctaBackground 30s ease infinite;
+
+  color: $color-text;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+	@extend .font-text;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section--cta {
+  background-color: $color-ctaBackground;
+  color: $color-ctaText;
+}
+.inner {
+  width: calc(100vw - 30px);
+  margin: 0 auto;
+
+  @media(min-width: 600px)
+  {
+      width: calc(100% - 30px);
+      min-width: 0;
+      max-width: calc(100% - 30px);
+  }
+  @media(min-width: 1024px)
+  {
+      width: calc(1024px - 30px);
+      max-width: calc(1024px - 30px);
+  }
+}
+.logo {
+  object-fit: contain;
+  padding: 2em;
+  max-width: 300px;
+}
+.link {
+  border-bottom: 2px solid;
+  text-decoration: none;
+}
+.link--secondary {
+  color: $color-white;
+}
+
+.description {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 30vh;
+  padding: 30px 0;
+}
+.description_headline {
+  @extend .headlineLarge;
+  margin-bottom: 0.7em;
+  text-align: center;
+}
+.description_text {
+  font-family: 'Roboto Condensed';
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 1.5em;
+  max-width: 33em;
+  text-align: center;
+
+  &:last-child {
+      margin-bottom: 0;
+  }
+}
+@keyframes scrollIndicator {
+  0%{transform: rotate(90deg)}
+  50%{transform: rotate(100deg)}
+  100%{transform: rotate(80deg)}
+}
+.scroll_indicator_wrapper {
+  animation: scrollIndicator 20s ease infinite;
+  display: none;
+
+  @media(min-width: 600px) {
+    display: block;
+  }
+}
+.scroll_indicator_symbol {
+  color: $color-text;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+//CTAS
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4em 0;
+
+  @media(min-width: 600px) {
+    flex-direction: row;
+  }
+}
+.cta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 2em;
+  flex-basis: 200px;
+  text-align: center;
+
+  @media(min-width: 600px) {
+    flex-basis: 400px;
+  }
+}
+.cta_button {
+  background-color: $color-accent;
+  border-radius: 30px;
+  color: $color-text;
+  cursor: pointer;
+  margin: 1em 0;
+  padding: 1em;
+  text-decoration: none;
+  transition: 600ms;
+
+  &:hover {
+    background-color: darken($color-accent, 8%);
+  }
+}
+
+.flex_filler {
+  display: flex;
+  flex-grow: 1;
+}
+.footer {
+	color: $color-text;
+	padding: 4em 2em 2em 2em;
+	text-align: center;
+}

@@ -1,0 +1,25 @@
+/* Use this to generate names
+ * http://chir.ag/projects/name-that-color/
+ */
+$color-white: #FFF;
+$color-black: #000;
+
+//Blues
+$color-gallery:		#EEEEEE;
+
+//Greys
+$color-woodsmoke:		#131516;
+$color-grey30:			rgba(0,0,0,0.30);
+
+//Pink
+$color-fuchsiaPink: #C357AD;
+
+// --- USAGE OF COLORS ------
+$color-pageBg: $color-fuchsiaPink;
+$color-ctaBackground: $color-white;
+$color-ctaText: $color-woodsmoke;
+
+$color-accent: $color-fuchsiaPink;
+
+$color-text:  $color-white;
+$color-textSecondary: $color-woodsmoke;
