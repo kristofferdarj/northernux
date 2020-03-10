@@ -7,8 +7,8 @@ layout: default
   <div class="inner description">
     <img class="logo" src="{{ '/assets/images/logo.png' | prepend: site.baseurl | prepend: site.url }}">
     <h1 class="description_headline">Ett community av UXare med basen i Östersund</h1>
-    <p class="description_text">Northern UX är främst en plats att hänga för UXare som bor eller jobbar i Jämtland, eller är nyfikna på hur det är att vara UXare här. Vi pratar på slack, håller meetups och genomför förbättringar för det lokala communityt. Målet är att ha roligare, öka samarbetet mellan företag och höja kunskapsnivån.</p>
-    <p class="description_text">Vi är en rörelse som inte är knuten till något företag utan uppstått spontant utifrån behov. Däremot vill vi synliggöra de företag som finns i närområdet för att bygga en starkare gemenskap över arbetsgivargränserna.</p>
+    <p class="description_text">Northern UX är främst en plats att hänga för UXare som bor eller jobbar i Jämtland, eller är nyfikna på hur det är att vara UXare här. Vi pratar på slack, håller meetups och genomför förbättringar för det lokala communityt. Målet är att ha roligare, öka samarbetet mellan företag/organisationer och höja kunskapsnivån.</p>
+    <p class="description_text">Vi är en rörelse som inte är knuten till något företag/organisation utan uppstått spontant utifrån behov. Däremot vill vi synliggöra de arbetsgivare som finns i närområdet för att bygga en starkare gemenskap.</p>
     <div class="scroll_indicator_wrapper"><a class="scroll_indicator_symbol" href="#cta">〉</a></div>
   </div>
 </section>
